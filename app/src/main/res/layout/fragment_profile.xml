@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The first level of hierarchy since all components will be arranged vertically-->
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/gradient">
+
+    <!-- Profile textView-->
+    <ImageView
+      android:id="@+id/profilePic"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:layout_alignParentTop="true"
+      android:layout_centerInParent="true"
+      android:src="@drawable/ic_person_white_24dp"/>
+
+    <!-- User name textView-->
+    <TextView
+      android:id="@+id/userName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/profilePic"
+      android:layout_centerHorizontal="true"
+      android:gravity="center"
+      android:textColor="@color/whiteColor"
+      android:textSize="16dp"
+        android:layout_marginBottom="4dp"
+        android:textStyle="bold"
+      android:fontFamily="sans-serif"
+      android:text="John" />
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/comment_border"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="5dp"
+      android:layout_below="@id/userName">
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- comments info-->
+        <ImageView
+          android:id="@+id/commentImage"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+            android:minWidth="0dp"
+          android:src="@drawable/ic_comment_black_24dp" />
+
+        <TextView
+          android:id="@+id/commentTextView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center"
+          android:textColor="@color/colorPrimaryDark"
+            android:padding="4dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+          android:text="5" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+          android:id="@+id/videoImage"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:padding="5dp"
+          android:src="@drawable/ic_videocam_black_24dp" />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:gravity="center"
+          android:textColor="@color/colorPrimaryDark"
+          android:paddingEnd="8dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+          android:text="5" />
+
+      </LinearLayout>
+    </LinearLayout>
+  </RelativeLayout>
+
+  <!-- comments and my videos info-->
+  <com.anychart.AnyChartView
+    android:id="@+id/any_chart_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  </com.anychart.AnyChartView>
+
+</LinearLayout>
+

@@ -1,0 +1,84 @@
+<resources>
+  <!-- App Name -->
+  <string name="app_name">GradingSecured</string>
+
+  <!-- Icon Titles -->
+  <string name="icon_myvideo">My Videos</string>
+  <string name="icon_video">Videos</string>
+  <string name="icon_profile">Profile</string>
+
+  <!-- Content Description -->
+  <string name="splash_logo_iv">Mic shaped logo</string>
+  <string name="iv_video">Thumbnail image of video</string>
+  <string name="feedback_dialog_left_bt">Navigate to previous category</string>
+  <string name="feedback_dialog_right_bt">Navigate to next category</string>
+
+  <!-- Buttons -->
+  <string name="feedback_bt">SUBMIT</string>
+  <string name="feedback_dialog_bt">SAVE</string>
+  <string name="overall_bt">CONFRIM SUBMISSION</string>
+
+  <!-- Categories -->
+  <string name="content">Content</string>
+  <string name="language">Language</string>
+  <string name="visual">Visual</string>
+  <string name="clarity">Clarity</string>
+  <string name="brevity">Brevity</string>
+
+
+  <!-- Text Fields -->
+  <string name="username">Username</string>
+  <string name="realname">Your Name</string>
+  <string name="email">Email</string>
+  <string name="password">Password</string>
+  <string name="confirm_password">Confirm Password</string>
+  <string name="role">Role in class</string>
+  <string name="login">Login</string>
+  <string name="register">Register</string>
+  <string name="submit">Submit</string>
+  <string name="forgot_password">Forgot Password?</string>
+  <string name="required_field">Required Field</string>
+  <string name="incorrect_crendentials">Incorrect Username or Password</string>
+  <string name="invalid_registration">Invalid username/real name/password</string>
+  <string name="successful_login">Successfully logged in.</string>
+  <string name="successful_registration">Successfully registered.</string>
+  <string name="password_recovery_prompt">Please type in the email you used for registration.
+  Then type in the verification code you received.</string>
+  <string name="reset_passwd">reset password</string>
+  <string name="resend_verification_message">Verification Email resent.</string>
+  <string name="password_reset_success">Successfully reset password</string>
+  <string name="invalid_email">Invalid email</string>
+  <string name="empty_password">Empty password</string>
+  <string name="mismatch_password">Password does not match</string>
+  <string name="upload_url">https://www.youtube.com/watch?v=SrTAaeCV_tc</string>
+
+
+  <!-- Long Text-->
+
+  <string name="welcome_text">Welcome to GradingSecured app!
+    &#xA;
+    &#xA;
+    To begin, please login or register.
+  </string>
+
+  <!-- Strings for sharedPrefs-->
+  <string name="spref_uid">uid</string>
+
+  <string-array name="user_roles">
+    <item>Student</item>
+    <item>TA</item>
+    <item>Professor</item>
+    <item>CITL Staff</item>
+  </string-array>
+
+  <string-array name="video_categories">
+    <item>Art</item>
+    <item>History</item>
+    <item>Mathmatics</item>
+    <item>Others</item>
+  </string-array>
+  <!---->
+  <item name="search_edit_frame" type="id"/>
+
+
+</resources>
